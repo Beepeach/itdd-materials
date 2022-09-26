@@ -1,4 +1,4 @@
-/// Copyright (c) 2021 Razeware LLC
+/// Copyright (c) 2022 Razeware LLC
 /// 
 /// Permission is hereby granted, free of charge, to any person obtaining a copy
 /// of this software and associated documentation files (the "Software"), to deal
@@ -30,67 +30,16 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import XCTest
+import UIKit
 @testable import FitNess
 
-class AppModelTests: XCTestCase {
-  //swiftlint:disable implicitly_unwrapped_optional
-  var sut: AppModel!
-
-  override func setUpWithError() throws {
-    try super.setUpWithError()
-    sut = AppModel()
-  }
-
-  override func tearDownWithError() throws {
-    sut = nil
-    try super.tearDownWithError()
-  }
-
-  // MARK: - Given
-  func givenGoalSet() {
-    sut.dataModel.goal = 1000
+func getRootViewController() -> RootViewController {
+  guard let controller = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?
+    .windows
+    .first?
+    .rootViewController as? RootViewController else {
+    assert(false, "Did not a get RootViewController")
   }
   
-  func givenInProgress() {
-    givenGoalSet()
-    try! sut.start()
-  }
-
-  // MARK: - Lifecycle
-  func testAppModel_whenInitialized_isInNotStartedState() {
-    let initialState = sut.appState
-    XCTAssertEqual(initialState, AppState.notStarted)
-  }
-
-  // MARK: - Start
-  func testAppModel_whenStated_throwError() {
-    XCTAssertThrowsError(try sut.start())
-  }
-  
-  func testStart_withGoalSet_doesNotThrow() {
-    givenGoalSet()
-    
-    XCTAssertNoThrow(try sut.start())
-  }
-  
-  func testAppModel_whenStarted_isInInProgressState() {
-    givenGoalSet()
-    
-    // when started
-    try? sut.start()
-
-    // then it is in inProgress
-    let observedState = sut.appState
-    XCTAssertEqual(observedState, .inProgress)
-  }
-  
-  // MARK: - Restart
-  func testAppModel_whenRest_isInNotStartedState() {
-    givenInProgress()
-    
-    sut.restart()
-    
-    XCTAssertEqual(sut.appState, .notStarted)
-  }
+  return controller
 }
