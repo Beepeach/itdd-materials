@@ -12,6 +12,7 @@
 		185CB1FE23C78CE6009F7571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185CB1FD23C78CE6009F7571 /* SceneDelegate.swift */; };
 		185CB20323C78CE6009F7571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB20123C78CE6009F7571 /* Main.storyboard */; };
 		185CB20523C78CE8009F7571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185CB20423C78CE8009F7571 /* Assets.xcassets */; };
+		466B302528E2C39300A01390 /* ButtonObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B302428E2C39300A01390 /* ButtonObserver.swift */; };
 		4C566FB4270D1B8B00499DB9 /* DataModel+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C566FB3270D1B8B00499DB9 /* DataModel+Tests.swift */; };
 		4C566FB6270D1B9E00499DB9 /* AppModel+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C566FB5270D1B9E00499DB9 /* AppModel+Tests.swift */; };
 		4CBCDEB32701423C00E8992C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCDEB22701423C00E8992C /* RootViewController.swift */; };
@@ -52,6 +53,7 @@
 		185CB20223C78CE6009F7571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		185CB20423C78CE8009F7571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185CB20923C78CE8009F7571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		466B302428E2C39300A01390 /* ButtonObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonObserver.swift; sourceTree = "<group>"; };
 		4C566FB3270D1B8B00499DB9 /* DataModel+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataModel+Tests.swift"; sourceTree = "<group>"; };
 		4C566FB5270D1B9E00499DB9 /* AppModel+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppModel+Tests.swift"; sourceTree = "<group>"; };
 		4CBCDEB22701423C00E8992C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				4CF6A59A270A567F006F0292 /* ViewControllers.swift */,
+				466B302428E2C39300A01390 /* ButtonObserver.swift */,
 			);
 			path = "Test Classes";
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				4C566FB6270D1B9E00499DB9 /* AppModel+Tests.swift in Sources */,
 				4CBEFC98270D24EF00EB190B /* AlertCenterTests.swift in Sources */,
 				4CF6A59B270A567F006F0292 /* ViewControllers.swift in Sources */,
+				466B302528E2C39300A01390 /* ButtonObserver.swift in Sources */,
 				4CCF440C2705284300DD29AB /* AppModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
