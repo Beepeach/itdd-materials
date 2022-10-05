@@ -13,6 +13,8 @@
 		185CB20323C78CE6009F7571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB20123C78CE6009F7571 /* Main.storyboard */; };
 		185CB20523C78CE8009F7571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185CB20423C78CE8009F7571 /* Assets.xcassets */; };
 		466B302528E2C39300A01390 /* ButtonObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B302428E2C39300A01390 /* ButtonObserver.swift */; };
+		46FB3F4D28ED123B0086C5ED /* RootViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FB3F4C28ED123B0086C5ED /* RootViewControllerTests.swift */; };
+		46FB3F5028ED1C350086C5ED /* Notification+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FB3F4F28ED1C350086C5ED /* Notification+Tests.swift */; };
 		4C566FB4270D1B8B00499DB9 /* DataModel+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C566FB3270D1B8B00499DB9 /* DataModel+Tests.swift */; };
 		4C566FB6270D1B9E00499DB9 /* AppModel+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C566FB5270D1B9E00499DB9 /* AppModel+Tests.swift */; };
 		4CBCDEB32701423C00E8992C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCDEB22701423C00E8992C /* RootViewController.swift */; };
@@ -54,6 +56,8 @@
 		185CB20423C78CE8009F7571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185CB20923C78CE8009F7571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		466B302428E2C39300A01390 /* ButtonObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonObserver.swift; sourceTree = "<group>"; };
+		46FB3F4C28ED123B0086C5ED /* RootViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerTests.swift; sourceTree = "<group>"; };
+		46FB3F4F28ED1C350086C5ED /* Notification+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Tests.swift"; sourceTree = "<group>"; };
 		4C566FB3270D1B8B00499DB9 /* DataModel+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataModel+Tests.swift"; sourceTree = "<group>"; };
 		4C566FB5270D1B9E00499DB9 /* AppModel+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppModel+Tests.swift"; sourceTree = "<group>"; };
 		4CBCDEB22701423C00E8992C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +131,14 @@
 				185CB20923C78CE8009F7571 /* Info.plist */,
 			);
 			path = FitNess;
+			sourceTree = "<group>";
+		};
+		46FB3F4E28ED1C250086C5ED /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				46FB3F4F28ED1C350086C5ED /* Notification+Tests.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		4C566FB1270D1B5F00499DB9 /* App Layer */ = {
@@ -207,6 +219,7 @@
 		4CBEFCA9270E6E4100EB190B /* App Layer */ = {
 			isa = PBXGroup;
 			children = (
+				46FB3F4C28ED123B0086C5ED /* RootViewControllerTests.swift */,
 			);
 			path = "App Layer";
 			sourceTree = "<group>";
@@ -278,6 +291,7 @@
 		4CF6A59C270D02DB006F0292 /* Test Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				46FB3F4E28ED1C250086C5ED /* Alert */,
 				4C566FB1270D1B5F00499DB9 /* App Layer */,
 				4C566FB2270D1B6A00499DB9 /* Data Model */,
 			);
@@ -434,9 +448,11 @@
 				4CCF441C270687DC00DD29AB /* DataModelTests.swift in Sources */,
 				4CCF440E27052F8000DD29AB /* StepCountControllerTests.swift in Sources */,
 				4C566FB6270D1B9E00499DB9 /* AppModel+Tests.swift in Sources */,
+				46FB3F5028ED1C350086C5ED /* Notification+Tests.swift in Sources */,
 				4CBEFC98270D24EF00EB190B /* AlertCenterTests.swift in Sources */,
 				4CF6A59B270A567F006F0292 /* ViewControllers.swift in Sources */,
 				466B302528E2C39300A01390 /* ButtonObserver.swift in Sources */,
+				46FB3F4D28ED123B0086C5ED /* RootViewControllerTests.swift in Sources */,
 				4CCF440C2705284300DD29AB /* AppModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

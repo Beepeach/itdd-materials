@@ -43,6 +43,7 @@ class AppModelTests: XCTestCase {
   }
   
   override func tearDownWithError() throws {
+    AlertCenter.instance.clearAlerts()
     sut.stateChangedCallback = nil
     sut = nil
     try super.tearDownWithError()
